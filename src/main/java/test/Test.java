@@ -13,7 +13,7 @@ public class Test extends HttpServlet{
 
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		req.getRequestDispatcher("/WEB-INF/test.jsp").forward(req, resp);
+		req.getRequestDispatcher("/WEB-INF/Q/common/test.jsp").forward(req, resp);
 	}
 	
 }
