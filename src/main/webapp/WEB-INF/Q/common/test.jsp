@@ -11,49 +11,61 @@
 	<!-- bootstrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-	
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js" integrity="sha512-LaBO0tZh1+6Ebk+EnHt/WsGM0UnmkCXfQ1rfhGmpa5MXUdslNuSSELBRcteHKz4k4ny+Op10Ax2fPoTNq+VcUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<link rel='stylesheet' href='css/indexbxslider.css'>
 
 	<title>The-Q</title>
+	  <style>
+    /* 패럴랙스 컨테이너 스타일 */
+    .parallax {
+      height: 100vh; /* 섹션 높이 */
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* 각 섹션 배경 */
+    .parallax-1 {
+      background-image: url('${cp}file/1.jpg');
+    }
+    .parallax-2 {
+      background-image: url('${cp}file/2.jpg');
+    }
+    .parallax-3 {
+      background-image: url('${cp}file/3.jpg');
+    }
+
+    /* 일반 섹션 스타일 */
+    .content-section {
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: #f8f9fa;
+    }
+
+    
+  </style>
+  
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-expand-lg">
-		  <div class="container-fluid">
-		    <a class="navbar-brand" href="#">The-Q</a>
-		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-		      <span class="navbar-toggler-icon"></span>
-		    </button>
-		    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-		      <ul class="navbar-nav">
-		        <li class="nav-item">
-		          <a class="nav-link active" aria-current="page" href="#">Home</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#">Features</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="#">Pricing</a>
-		        </li>
-		        <li class="nav-item dropdown">
-		          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-		            Dropdown link
-		          </a>
-		          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-		            <li><a class="dropdown-item" href="#">Action</a></li>
-		            <li><a class="dropdown-item" href="#">Another action</a></li>
-		            <li><a class="dropdown-item" href="#">Something else here</a></li>
-		          </ul>
-		        </li>
-		      </ul>
-		    </div>
-		  </div>
-		</nav>
+
 	</header>
-	<main class="container">
-		test
+	<main>
+		<!-- 패럴랙스 효과 -->
+	  <div class="parallax parallax-1"></div>
+	  <div class="content-section">
+	    <h2 class="animated-text">Welcome to Parallax Section 1</h2>
+	  </div>
+	  <div class="parallax parallax-2"></div>
+	  <div class="content-section">
+	    <h2>Welcome to Parallax Section 2</h2>
+	  </div>
+	  <div class="parallax parallax-3"></div>
+	  <div class="content-section">
+	    <h2>Thank you for scrolling!</h2>
+	  </div>
 	</main>
 	<footer>
 	
